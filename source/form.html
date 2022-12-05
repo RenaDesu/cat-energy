@@ -40,7 +40,116 @@
     </nav>
   </header>
   <main class="main-container">
-<!-- тут будет контент -->
+    <h1 class="main-title">Подбор программы</h1>
+    <section class="program-form">
+      <form class="program-form__form form">
+        <fieldset class="form__cat-details-set cat-details-set">
+          <p class="cat-details-set__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <label class="cat-details-set__label" for="name">
+            Имя:*
+          </label>
+          <input class="cat-details-set__field" type="text" name="name" value="Барсик" id="name" required>
+          <label class="cat-details-set__label" for="weight">
+            Вес (кг):*
+          </label>
+          <input class="cat-details-set__field" type="text" name="weight" value="7" id="weight" required>
+          <label class="cat-details-set__label" for="age">
+            Возраст (лет):
+          </label>
+          <input class="cat-details-set__field" type="text" name="age" value="7" id="age">
+        </fieldset>
+        <fieldset class="form__program-set program-set">
+          <h3 class="visually-hidden">Выберите программу:</h3>
+          <ul class="program-set__list">
+            <li class="program-set__item">
+              <label class="program-set__label">
+                <input class="visually-hidden program-set__input" type="radio" name="program" value="slim" checked>
+                <span class="program-set__input-mark"></span>
+                Похудение
+              </label>
+            </li>
+            <li class="program-set__item">
+              <label class="program-set__label">
+                <input class="visually-hidden program-set__input" type="radio" name="program" value="pro">
+                <span class="program-set__input-mark"></span>
+                Набор массы
+              </label>
+            </li>
+            <li class="program-set__item">
+              <label class="program-set__label">
+                <input class="visually-hidden program-set__input" type="radio" name="program" value="other">
+                <span class="program-set__input-mark"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__contacts-set contacts-set">
+          <h3 class="contacts-set__legend">Контактные данные (владельца кота)</h3>
+          <label class="contacts-set__label" for="email">
+            E-mail:*
+          </label>
+          <div class="contacts-set__input-wrapper">
+            <input class="contacts-set__field" type="email" name="email" value="kuklachev@gmail.com" id="email"
+              required>
+            <span class="contacts-set__field-icon contacts-set__field-icon--email"></span>
+          </div>
+          <label class="contacts-set__label" for="phone-number">
+            Телефон:*
+          </label>
+          <div class="contacts-set__input-wrapper">
+            <input class="contacts-set__field" type="tel" name="phone-number" value="8 (960) 900-60-90"
+              id="phone-number" required>
+            <span class="contacts-set__field-icon contacts-set__field-icon--phone"></span>
+          </div>
+        </fieldset>
+        <fieldset class="form__comment-field comment-field">
+          <h3 class="comment-field__legend">Комментарий</h3>
+          <label class="visually-hidden" for="comment-field">Комментарий</label>
+          <textarea class="comment-field__textarea" name="comment-field" id="comment-field"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__additional additional">
+          <h3 class="additional__legend">Дополнительно</h3>
+          <ul class="additional__list">
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="visually-hidden additional__input" type="checkbox" name="sweetener" checked>
+                <span class="additional__input-mark"></span>
+                Сахарозаменитель
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="visually-hidden additional__input" type="checkbox" name="water">
+                <span class="additional__input-mark"></span>
+                Питьевая вода
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="visually-hidden additional__input" type="checkbox" name="milk">
+                <span class="additional__input-mark"></span>
+                Молоко
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__label">
+                <input class="visually-hidden additional__input" type="checkbox" name="vitamins">
+                <span class="additional__input-mark"></span>
+                Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__submit-form-wrapper">
+          <button class="form__submit-form-button button" type="submit">
+            Отправить заявку
+          </button>
+          <small class="form__submit-form-legend">* — Обязательные поля</small>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">

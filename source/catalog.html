@@ -40,7 +40,7 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1>Каталог продукции</h1>
+    <h1 class="main-title">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list product-list">
@@ -156,7 +156,52 @@
           </dl>
           <button class="product-list__button button" type="button">Заказать</button>
         </li>
+        <li class="product-list__item">
+          <button class="product-list__button-more button" type="button"></button>
+          <p class="product-list__title">Показать еще 100500 товаров</p>
+          <p class="product-list__description">На самом деле вкусов гораздо больше!</p>
+          <a class="product-list__button-all button" href="#">показать все</a>
+        </li>
       </ul>
+      <h2 class="catalog__title">Дополнительные товары</h2>
+      <ul class="catalog__additional-list additional-products-list">
+        <li class="additional-products-list__item">
+          <h3 class="additional-products-list__title">Сахарозаменитель</h3>
+          <dl class="additional-products-list__description">
+            <dt class="additional-products-list__definition">1 упаковка (100 г)</dt>
+            <dd class="additional-products-list__value">200 Р.</dd>
+          </dl>
+          <button class="additional-products-list__button button" type="button">Заказать</button>
+        </li>
+        <li class="additional-products-list__item">
+          <h3 class="additional-products-list__title">Питьевая вода</h3>
+          <dl class="additional-products-list__description">
+            <dt class="additional-products-list__definition">5 литров</dt>
+            <dd class="additional-products-list__value">50 Р.</dd>
+          </dl>
+          <button class="additional-products-list__button button" type="button">Заказать</button>
+        </li>
+        <li class="additional-products-list__item">
+          <h3 class="additional-products-list__title">Молоко</h3>
+          <dl class="additional-products-list__description">
+            <dt class="additional-products-list__definition">1 литр</dt>
+            <dd class="additional-products-list__value">100 Р.</dd>
+          </dl>
+          <button class="additional-products-list__button button" type="button">Заказать</button>
+        </li>
+        <li class="additional-products-list__item">
+          <h3 class="additional-products-list__title">Витамины</h3>
+          <dl class="additional-products-list__description">
+            <dt class="additional-products-list__definition">1 упаковка (30 г)</dt>
+            <dd class="additional-products-list__value">300 Р.</dd>
+          </dl>
+          <button class="additional-products-list__button button" type="button">Заказать</button>
+        </li>
+      </ul>
+      <div class="catalog__promo">
+        <span class="catalog__promo-icon"></span>
+        <p class="catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
