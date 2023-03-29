@@ -1,0 +1,71 @@
+.main-header {
+  padding: 10px 0 17px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-header__toggle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+
+.main-header__toggle-line {
+  height: 2px;
+  width: 24px;
+  background-color: @black;
+}
+
+.main-header__toggle--nav-closed .main-header__toggle-line::before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  background-color: @black;
+}
+
+.main-header__toggle--nav-closed .main-header__toggle-line::after {
+  content: "";
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  bottom: 11px;
+  left: 8px;
+  background-color: @black;
+}
+
+.main-header__toggle--nav-opened .main-header__toggle-line {
+  transform: rotate(45deg);
+}
+
+.main-header__toggle--nav-opened .main-header__toggle-line::after {
+  content: "";
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(90deg);
+  background-color: @black;
+}
+
+.main-header__toggle--nojs .main-header__toggle-line {
+  display: none;
+}
