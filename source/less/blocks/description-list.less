@@ -1,0 +1,44 @@
+.description-list {
+  list-style-type: none;
+}
+
+.description-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.description-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.description-list__icon {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: @basic-green;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description-list__icon--composition {
+  background-image: url("../../img/icon-leaf.svg");
+}
+
+.description-list__icon--texture {
+  background-image: url("../../img/icon-tub.svg");
+}
+
+.description-list__icon--frequency {
+  background-image: url("../../img/icon-eat.svg");
+}
+
+.description-list__icon--term {
+  background-image: url("../../img/icon-alarm.svg");
+}
+
+.description-list__specification {
+  margin: 0;
+  width: 60%;
+  font-family: "Arial", sans-serif;
+  color: @special-grey-4;
+}
