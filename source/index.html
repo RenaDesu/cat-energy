@@ -142,24 +142,25 @@
           <div class="advantages__case-wrapper">
             <h3 class="case__title">Живой пример</h3>
             <p class="case__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
               часов в день.
             </p>
             <div class="case__statistics statistics">
               <h4 class="visually-hidden">Наглядная статистика</h4>
-              <p class="statistics__box-view">Снижение веса <span>5 кг</span></p>
-              <p class="statistics__box-view">Затрачено времени <span>60 дней</span></p>
-              <dl class="statistics__list costs">
-                <dt class="costs__definition">Затраты на питание:</dt>
-                <dd class="costs__value">15 000 руб.</dd>
-              </dl>
+              <div class="statistics__box-view-wrapper">
+                <p class="statistics__box-view">5 кг<span>Снижение веса</span></p>
+                <p class="statistics__box-view">60 дней<span>Затрачено времени</span></p>
+              </div>
+              <p class="statistics__costs">
+                Затраты на питание: 15 000 руб.
+              </p>
             </div>
             <div class="case__illustration illustration">
-              <img class="illustration__before" src="img/slider-before-mobile.png" width="280" height="256"
-                alt="Так выглядел Борис до.">
-              <img class="illustration__after" src="img/slider-after-mobile.png" width="280" height="256"
-                alt="Так выглядит Борис после.">
+              <div class="illustration__wrapper">
+                <div class="illustration__img illustration__img--before"></div>
+                <div class="illustration__img illustration__img--after"></div>
+              </div>
               <form class="illustration__slider slider">
                 <input class="slider__value" type="number" step="any" name="slider-level" value="">
                 <div class="slider__slider-wrapper"></div>
@@ -170,28 +171,26 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <section class="main-footer__contacts contacts">
-          <div class="contacts__wrapper">
-            <div class="contacts__contacts">
-              <h2 class="visually-hidden">Контакты</h2>
-              <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
-              <address class="contacts__address">
-                ул. Большая
-                Конюшенная, д. 19/8
-                Санкт-Петербург
-              </address>
-            </div>
-            <div class="contacts__map">
-              <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7070.859204768321!2d30.315399720178625!3d59.93925798037334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1668685839475!5m2!1sru!2sru"
-                width="320" height="362" allowfullscreen title="Кэт Энерджи на карте.">
-              </iframe>
-            </div>
-          </div>
-        </section>
-        <div class="main-footer__logo logo">
-          <svg class="logo__cat-energy" width="128" height="24" viewBox="0 0 128 24" fill="none"
+      <section class="main-footer__contacts contacts">
+        <div class="contacts__contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__partnership">Приглашаем <br> к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+        <div class="contacts__map-container">
+          <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7070.859204768321!2d30.315399720178625!3d59.93925798037334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1668685839475!5m2!1sru!2sru"
+            width="320" height="362" allowfullscreen title="Кэт Энерджи на карте.">
+          </iframe>
+        </div>
+      </section>
+      <div class="main-footer__flex-container">
+        <div class="main-footer__logo">
+          <svg class="main-footer__logo-svg" width="128" height="24" viewBox="0 0 128 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3260)">
               <path
@@ -263,23 +262,21 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <div class="copyright__wrapper">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
-              <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_95_230)">
-                  <path
-                    d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-                    fill="#666666" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_95_230">
-                    <rect width="27" height="34" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_95_230)">
+                <path
+                  d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                  fill="#666666" />
+              </g>
+              <defs>
+                <clipPath id="clip0_95_230">
+                  <rect width="27" height="34" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
