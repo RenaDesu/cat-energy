@@ -1,7 +1,20 @@
 .button {
   width: 100%;
   padding: 14px 0;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-  color: inherit;
+  color: @white;
   background-color: @basic-green;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: @dark-green;
+}
+
+.button:focus,
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
