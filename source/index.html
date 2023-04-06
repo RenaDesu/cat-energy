@@ -12,9 +12,12 @@
   <div class="container">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи.">
+        </picture>
       </a>
-      <a class="main-header__logo">
+      <a class="main-header__logo main-header__logo--tablet">
         <img src="img/logo-text-mobile.svg" width="101" height="18" alt="Кэт Энерджи.">
       </a>
       <button class="main-header__toggle main-header__toggle--nav-closed main-header__toggle--nojs" type="button">
@@ -51,8 +54,11 @@
             <p class="hero-section__slogan">Занялся собой? Займись котом!</p>
           </div>
           <div class="hero-section__image-wrapper">
-            <img class="hero-section__image" src="img/index-can-mobile.png" width="280" height="270" alt="Изображение товара Cat Energy
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+              <img class="hero-section__image" src="img/index-can-mobile.png" width="280" height="270" alt="Изображение товара Cat Energy
           PRO 500 г. с курицей.">
+            </picture>
           </div>
           <a class="hero-section__button button" href="catalog.html">Подобрать программу</a>
         </div>
@@ -81,11 +87,13 @@
             </a>
           </li>
           <li class="program-list__item">
-            <div class="program-list__icon-background">
-              <img class="program-list__icon program-list__icon--pro" src="img/cat-pro.svg" width="67" height="50"
-                alt="Изображение кошки про.">
+            <div class="program-list__intro-wrapper">
+              <div class="program-list__icon-background">
+                <img class="program-list__icon program-list__icon--pro" src="img/cat-pro.svg" width="67" height="50"
+                  alt="Изображение кошки про.">
+              </div>
+              <h3 class="program-list__title">Набор массы</h3>
             </div>
-            <h3 class="program-list__title">Набор массы</h3>
             <p class="program-list__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
               нарастить

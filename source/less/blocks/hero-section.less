@@ -1,6 +1,11 @@
 .hero-section {
   text-align: center;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    color: @black;
+  }
 }
 
 .hero-section__wrapper {
@@ -8,6 +13,11 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    position: relative;
+  }
 }
 
 .hero-section__content {
@@ -18,6 +28,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 0 20px 0;
+    margin: 0;
+    min-height: 181px;
+    background-image: none;
+  }
 }
 
 .hero-section__intro {
@@ -25,11 +42,25 @@
   margin: 0 0 25px 0;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 34px 0 87px;
+    margin: 0 0 41px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero-section__slogan {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 0 0 87px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero-section__image-wrapper {
@@ -37,6 +68,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .hero-section__image {
@@ -47,4 +82,12 @@
 
 .hero-section__button {
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 13%;
+    top: 270px;
+    max-width: 244px;
+    text-align: center;
+  }
 }

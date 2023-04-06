@@ -1,17 +1,23 @@
 .main-nav {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .main-nav--opened,
 .main-nav--nojs {
-  display: flex;
-  justify-content: center;
-  grid-column: 1 / 4;
-  margin: 0 -30px -236px -30px;
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 4;
+    margin: 0 -30px -236px -30px;
+  }
 }
 
 .main-nav--closed {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -19,4 +25,11 @@
   margin: 16px 0 0 0;
   padding: 0;
   z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
