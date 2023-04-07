@@ -11,19 +11,42 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 63px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .case__description {
   margin: 0;
   font-family: "Arial", sans-serif;
   color: @special-grey-4;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .case__statistics {
   padding: 20px 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px 0 250px 0;
+  }
 }
 
 .case__illustration {
   height: 256px;
   padding: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    height: 462px;
+    padding: 0;
+  }
 }
