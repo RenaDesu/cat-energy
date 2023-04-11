@@ -17,6 +17,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 76px 0;
+  }
 }
 
 .case__description {
@@ -27,6 +31,11 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 0 0 0;
+    width: 35%;
   }
 }
 
@@ -39,6 +48,12 @@
     align-items: center;
     padding: 54px 0 250px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 69px 0 0 0;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .case__illustration {
@@ -48,5 +63,12 @@
   @media (min-width: @tablet-width) {
     height: 462px;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 158px;
+    width: 100%;
+    z-index: -1;
   }
 }

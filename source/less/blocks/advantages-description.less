@@ -15,6 +15,10 @@
     height: 1px;
     background-color: @border;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .advantages-description__title {
@@ -38,5 +42,10 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 37px 137px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    gap: 0 77px;
   }
 }
