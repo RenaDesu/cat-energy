@@ -1,4 +1,5 @@
 .main-header {
+  position: relative;
   padding: 10px 0 17px 0;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -18,6 +19,12 @@
     grid-template-columns: 202px auto;
     column-gap: 540px;
   }
+}
+
+.main-header--special {
+  padding: 10px 30px 17px 30px;
+  margin: 0 -30px 27px -30px;
+  border-bottom: 1px solid @special-grey-6;
 }
 
 .main-header__logo {
