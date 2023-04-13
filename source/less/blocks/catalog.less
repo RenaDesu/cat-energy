@@ -3,12 +3,60 @@
   padding: 0;
 }
 
-.catalog__title {
-  margin: 0;
-  padding: 0 0 35px 0;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+.catalog__title-wrapper {
+  position: relative;
   border-bottom: 1px solid @special-grey-2;
 }
 
+.catalog__title {
+  width: 226px;
+  margin: 0;
+  padding: 0 20px 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  background: @white;
+}
+
+.catalog__title-line {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  margin: 0 -20px 0 0;
+  width: 100%;
+  height: 2px;
+  background: @basic-green;
+  z-index: -1;
+}
+
+.catalog__additional-list {
+  margin: 0 0 35px 0;
+  padding: 0;
+}
+
+.catalog__promo {
+  margin: 0 0 35px 0;
+  min-height: 289px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.catalog__promo-icon {
+  margin: 0 0 48px 0;
+}
+
+.catalog__promo-text {
+  width: 68%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: @white;
+}

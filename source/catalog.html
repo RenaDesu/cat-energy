@@ -45,7 +45,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-title">Каталог продукции</h1>
+      <h1 class="main-container__title">Каталог продукции</h1>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list product-list">
@@ -210,7 +210,10 @@
             <a class="product-list__button-all button" href="#">показать все</a>
           </li>
         </ul>
-        <h2 class="catalog__title">Дополнительные товары</h2>
+        <div class="catalog__title-wrapper">
+          <h2 class="catalog__title">Дополнительные товары</h2>
+          <div class="catalog__title-line"></div>
+        </div>
         <ul class="catalog__additional-list additional-products-list">
           <li class="additional-products-list__item">
             <h3 class="additional-products-list__title">Сахарозаменитель</h3>
@@ -246,14 +249,14 @@
           </li>
         </ul>
         <div class="catalog__promo">
-          <span class="catalog__promo-icon"></span>
+          <img class="catalog__promo-icon" src="img/icon-gift.svg" width="78" height="80">
           <p class="catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__contacts contacts">
-        <div class="contacts__contacts">
+        <div class="contacts__contacts contacts__contacts--special">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__partnership">Приглашаем <br> к сотрудничеству дилеров!</p>
           <address class="contacts__address">
