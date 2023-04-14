@@ -3,6 +3,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    margin: 0 0 68px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 141px 60px;
@@ -12,6 +13,11 @@
 .catalog__title-wrapper {
   position: relative;
   border-bottom: 1px solid @special-grey-2;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 -30px 80px -10px;
+    border: none;
+  }
 }
 
 .catalog__title {
@@ -22,6 +28,13 @@
   font-size: 24px;
   line-height: 24px;
   background: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    padding: 0 36px 0 36px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog__title-line {
@@ -33,11 +46,21 @@
   height: 2px;
   background: @basic-green;
   z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 -30px 0 -30px;
+    top: 24px;
+    left: 0;
+  }
 }
 
 .catalog__additional-list {
   margin: 0 0 35px 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 69px 0;
+  }
 }
 
 .catalog__promo {
@@ -51,10 +74,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    margin: 0 0 76px 0;
+    padding: 0 124px 0 77px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-tablet.png");
+  }
 }
 
 .catalog__promo-icon {
   margin: 0 0 48px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 20%;
+    margin: 0;
+  }
 }
 
 .catalog__promo-text {
@@ -65,4 +102,9 @@
   font-size: 16px;
   line-height: 20px;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    text-align: left;
+  }
 }
