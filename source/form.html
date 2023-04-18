@@ -10,9 +10,10 @@
 
 <body class="page__body">
   <div class="container">
-    <header class="main-header">
+    <header class="main-header main-header--special">
       <a class="main-header__logo" href="index.html">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт Энерджи.">
         </picture>
@@ -45,26 +46,26 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-title">Подбор программы</h1>
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
       <section class="program-form">
         <form class="program-form__form form">
-          <fieldset class="form__cat-details-set cat-details-set">
+          <fieldset class="form__set cat-details-set">
             <p class="cat-details-set__description">Заполните анкету, и мы подберем программу питания для вашего кота
             </p>
-            <label class="cat-details-set__label" for="name">
+            <label class="cat-details-set__label">
               Имя:*
+              <input class="cat-details-set__field" type="text" name="name" id="name" required>
             </label>
-            <input class="cat-details-set__field" type="text" name="name" value="Барсик" id="name" required>
-            <label class="cat-details-set__label" for="weight">
+            <label class="cat-details-set__label">
               Вес (кг):*
+              <input class="cat-details-set__field" type="text" name="weight" id="weight" required>
             </label>
-            <input class="cat-details-set__field" type="text" name="weight" value="7" id="weight" required>
-            <label class="cat-details-set__label" for="age">
+            <label class="cat-details-set__label">
               Возраст (лет):
+              <input class="cat-details-set__field" type="text" name="age" id="age">
             </label>
-            <input class="cat-details-set__field" type="text" name="age" value="7" id="age">
           </fieldset>
-          <fieldset class="form__program-set program-set">
+          <fieldset class="form__set program-set">
             <h3 class="visually-hidden">Выберите программу:</h3>
             <ul class="program-set__list">
               <li class="program-set__item">
@@ -90,32 +91,33 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts-set contacts-set">
-            <h3 class="contacts-set__legend">Контактные данные (владельца кота)</h3>
-            <label class="contacts-set__label" for="email">
-              E-mail:*
-            </label>
-            <div class="contacts-set__input-wrapper">
-              <input class="contacts-set__field" type="email" name="email" value="kuklachev@gmail.com" id="email"
-                required>
+          <fieldset class="form__set contacts-set">
+            <div class="contacts-set__legend-wrapper">
+              <h3 class="contacts-set__legend">Контактные данные (владельца кота)</h3>
+              <div class="contacts-set__legend-line"></div>
+            </div>
+            <div class="contacts-set__wrapper">
+              <label class="contacts-set__label" for="email">
+                E-mail:*
+              </label>
+              <input class="contacts-set__field" type="email" name="email" id="email" required>
               <span class="contacts-set__field-icon contacts-set__field-icon--email"></span>
             </div>
-            <label class="contacts-set__label" for="phone-number">
-              Телефон:*
-            </label>
-            <div class="contacts-set__input-wrapper">
-              <input class="contacts-set__field" type="tel" name="phone-number" value="8 (960) 900-60-90"
-                id="phone-number" required>
+            <div class="contacts-set__wrapper">
+              <label class="contacts-set__label" for="phone-number">
+                Телефон:*
+              </label>
+              <input class="contacts-set__field" type="tel" name="phone-number" id="phone-number" required>
               <span class="contacts-set__field-icon contacts-set__field-icon--phone"></span>
             </div>
           </fieldset>
-          <fieldset class="form__comment-field comment-field">
+          <fieldset class="form__set comment-field">
             <h3 class="comment-field__legend">Комментарий</h3>
             <label class="visually-hidden" for="comment-field">Комментарий</label>
             <textarea class="comment-field__textarea" name="comment-field" id="comment-field"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="form__additional additional">
+          <fieldset class="form__set additional">
             <h3 class="additional__legend">Дополнительно</h3>
             <ul class="additional__list">
               <li class="additional__item">
