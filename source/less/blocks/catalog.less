@@ -8,6 +8,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 141px 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 144px 80px;
+  }
 }
 
 .catalog__title-wrapper {
@@ -17,6 +22,10 @@
   @media (min-width: @tablet-width) {
     margin: 0 -30px 80px -10px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -110px 80px -30px;
   }
 }
 
@@ -52,6 +61,10 @@
     top: 24px;
     left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 -110px 0 -90px;
+  }
 }
 
 .catalog__additional-list {
@@ -60,6 +73,19 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 69px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.catalog__additional-list-wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    margin: 0 0 85px 0;
+    column-gap: 79px;
   }
 }
 
@@ -83,6 +109,14 @@
     justify-content: space-between;
     background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-tablet.png");
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-image: url("../../img/green-rectangle-gift-desktop.png"), url("../../img/gift-cat-desktop.png");
+  }
 }
 
 .catalog__promo-icon {
@@ -91,6 +125,11 @@
   @media (min-width: @tablet-width) {
     width: 20%;
     margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 80px;
+    margin: 0 0 46px 0;
   }
 }
 
@@ -106,5 +145,9 @@
   @media (min-width: @tablet-width) {
     width: 161px;
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
   }
 }

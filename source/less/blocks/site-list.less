@@ -20,6 +20,13 @@
   }
 }
 
+.site-list--normal {
+  @media (min-width: @desktop-width) {
+    color: @black;
+    background-color: transparent;
+  }
+}
+
 .site-list__item {
   height: 66px;
   display: flex;
@@ -47,6 +54,12 @@
 
   @media (min-width: @desktop-width) {
     background-color: @white;
+  }
+}
+
+.site-list__item--current-normal::after {
+  @media (min-width: @desktop-width) {
+    background-color: @basic-green;
   }
 }
 
