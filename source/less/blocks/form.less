@@ -1,3 +1,37 @@
 .form__set {
   border: none;
 }
+
+.form__submit-form-wrapper {
+  padding: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 72px 40px;
+    flex-direction: row;
+  }
+}
+
+.form__submit-form-button {
+  margin: 0 0 21px 0;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 46%;
+    margin: 0 61px 0 0;
+    font-size: 20px;
+  }
+}
+
+.form__submit-form-legend {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}

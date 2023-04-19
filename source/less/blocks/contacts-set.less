@@ -1,20 +1,37 @@
 .contacts-set {
   margin: 0;
   padding: 25px 0 9px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px 45px 40px;
+  }
 }
 
 .contacts-set__legend-wrapper {
   position: relative;
+  margin: 0 0 35px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 75px 0;
+  }
 }
 
 .contacts-set__legend {
   width: 187px;
-  margin: 0 0 35px 0;
+  margin: 0;
   padding: 0 14px 0 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   background: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 514px;
+    margin: 0 0 0 -20px;
+    padding: 0 20px 0 20px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .contacts-set__legend-line {
@@ -27,48 +44,92 @@
   background: @basic-green;
   z-index: -1;
 
-  // @media (min-width: @tablet-width) {
-  //   margin: 0 -30px 0 -30px;
-  //   top: 24px;
-  //   left: 0;
-  // }
+  @media (min-width: @tablet-width) {
+    margin: 0 -70px 0 -70px;
+    top: 24px;
+    left: 12px;
+    width: 115%;
+  }
 
   // @media (min-width: @desktop-width) {
   //   margin: 0 -110px 0 -90px;
   // }
 }
 
-.contacts-set__label {
+.contacts-set__label-wrapper {
+  position: relative;
   margin: 0 0 14px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.contacts-set__label {
+  width: 30%;
   text-transform: uppercase;
   word-break: keep-all;
   color: @special-grey-4;
+
+  @media (min-width: @tablet-width) {
+    width: 14%;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts-set__field {
   width: 100%;
-  position: relative;
   margin: 0 0 0 8px;
   padding: 13px 35px 15px 16px;
   text-transform: uppercase;
   color: @special-grey-4;
-  border: 1px solid @special-grey-2;
+  border: 1px solid #e7e7e7;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts-set__field::placeholder {
   text-transform: none;
 }
 
+.contacts-set__field:hover {
+  border: 1px solid @special-grey-2;
+}
+
+.contacts-set__field:focus,
+.contacts-set__field:active {
+  border: 1px solid @special-grey-4;
+  outline: 1px solid @special-grey-4;
+}
+
+.contacts-set__field--error {
+  border: 1px solid @status-error;
+  outline: 1px solid @status-error;
+}
+
 .contacts-set__field-icon {
   position: absolute;
   display: flex;
   align-items: center;
-  right: 40px;
+  right: 12px;
   width: 20px;
   height: 20px;
   color: @special-grey-5;
+}
+
+.contacts-set__label-wrapper:focus-within .contacts-set__field-icon,
+.contacts-set__label-wrapper:active .contacts-set__field-icon {
+  color: @basic-green;
+}
+
+.contacts-set__field-icon--error {
+  color: @status-error;
 }

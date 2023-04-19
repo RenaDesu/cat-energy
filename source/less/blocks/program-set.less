@@ -2,12 +2,23 @@
   margin: 0 -25px 0 -25px;
   padding: 21px 25px 18px 25px;
   border-bottom: 1px solid @special-grey-6;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 40px 70px 40px;
+    border: none;
+  }
 }
 
 .program-set__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 0 24px 27px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .program-set__item {
@@ -23,6 +34,11 @@
   align-items: center;
   text-transform: uppercase;
   color: @special-grey-5;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-set__input-mark {
@@ -32,6 +48,13 @@
   height: 29px;
   border: 1px solid @special-grey-2;
   border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px 0 0;
+    width: 39px;
+    height: 39px;
+  }
 }
 
 .program-set__input[type="radio"]:checked + .program-set__input-mark::before {
@@ -44,6 +67,13 @@
   height: 14px;
   background: @basic-green;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .program-set__input-mark:hover,
