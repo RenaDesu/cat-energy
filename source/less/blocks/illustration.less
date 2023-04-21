@@ -17,7 +17,7 @@
 }
 
 .illustration__img {
-  width: 162px;
+  width: 132px;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,20 +34,36 @@
 
 .illustration__img--before {
   background-image: url("../../img/slider-before-mobile.png");
-  background-position: -18% 50%;
+  background-position: 5% 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/slider-before-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/slider-before-tablet.png");
     background-position: -12% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/slider-before-tablet@2x.png");
+    }
   }
 }
 
 .illustration__img--after {
   background-image: url("../../img/slider-after-mobile.png");
-  background-position: 120% 50%;
+  background-position: 96% 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/slider-after-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/slider-after-tablet.png");
     background-position: 113% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/slider-after-tablet@2x.png");
+    }
   }
 }

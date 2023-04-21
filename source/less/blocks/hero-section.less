@@ -29,6 +29,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/green-rectangle-mobile.png"), url("../../img/index-background-cat@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     padding: 40px 0 20px 0;
     margin: 0;
@@ -100,6 +104,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/green-rectangle-desktop.png"), url("../../img/index-background-cat-desktop@2x.jpg");
+    }
   }
 }
 

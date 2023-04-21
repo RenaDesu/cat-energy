@@ -101,6 +101,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 200px;
     margin: 0 0 76px 0;
@@ -108,6 +112,10 @@
     flex-direction: row;
     justify-content: space-between;
     background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/green-rectangle-gift-mobile.png"), url("../../img/gift-cat-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -116,6 +124,10 @@
     padding: 0;
     margin: 0;
     background-image: url("../../img/green-rectangle-gift-desktop.png"), url("../../img/gift-cat-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/green-rectangle-gift-desktop.png"), url("../../img/gift-cat-desktop@2x.png");
+    }
   }
 }
 
