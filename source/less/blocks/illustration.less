@@ -1,4 +1,5 @@
 .illustration__wrapper {
+  // position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@
 }
 
 .illustration__img {
+  // position: relative;
   width: 132px;
   height: 100%;
   background-repeat: no-repeat;
@@ -50,6 +52,21 @@
   }
 }
 
+// .illustration__img--before::after {
+//   content: "";
+//   position: absolute;
+//   right: -2px;
+//   width: 4px;
+//   height: 256px;
+//   background: @special-grey-3;
+//   border-radius: 2px;
+//   z-index: 1;
+
+//   @media (min-width: @tablet-width) {
+//     height: 460px;
+//   }
+// }
+
 .illustration__img--after {
   background-image: url("../../img/slider-after-mobile.png");
   background-position: 96% 50%;
@@ -67,3 +84,31 @@
     }
   }
 }
+
+// .illustration__button {
+//   position: absolute;
+//   top: 108px;
+//   width: 18px;
+//   height: 36px;
+//   border: 2px solid @special-grey-3;
+//   background: @white;
+//   cursor: pointer;
+//   z-index: 2;
+
+//   @media (min-width: @tablet-width) {
+//     top: 236px;
+//   }
+// }
+
+// .illustration__button-minus {
+//   right: 0;
+//   border-top-left-radius: 20px;
+//   border-bottom-left-radius: 20px;
+//   border-right: none;
+// }
+
+// .illustration__button-plus {
+//   border-top-right-radius: 20px;
+//   border-bottom-right-radius: 20px;
+//   border-left: none;
+// }
