@@ -34,8 +34,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 70px 0 0 0;
-    width: 35%;
+    margin: 0 0 0 -110px;
+    padding: 70px 204px 0 110px;
+    grid-column: 1 / 2;
+    background: #eaeaea;
   }
 }
 
@@ -50,9 +52,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 69px 0 0 0;
+    margin: 0 0 0 -110px;
+    padding: 69px 0 75px 110px;
     flex-direction: column;
     align-items: start;
+    grid-column: 1 / 2;
+    background: #eaeaea;
   }
 }
 
@@ -68,12 +73,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 -110px 0 -110px;
-    padding: 0 110px 0 110px;
-    position: absolute;
-    top: 158px;
-    width: 100%;
-    z-index: -1;
+    height: 100%;
+    margin: 0 -110px 0 0;
+    grid-row: 2 / -1;
+    grid-column: 2 / 3;
     background: #eaeaea;
   }
 }

@@ -33,8 +33,16 @@
   border-radius: 2px;
 }
 
-.slider__change-bar::after {
-  content: "";
+.slider__change-bar:hover {
+  background: @basic-green;
+}
+
+.slider__change-bar:focus,
+.slider__change-bar:active {
+  opacity: 60%;
+}
+
+.slider__change-bar-arrows {
   width: 36px;
   height: 36px;
   position: absolute;
@@ -44,17 +52,18 @@
   background-color: @white;
   border: 2px solid @special-grey-3;
   border-radius: 100%;
+  color: @special-grey-3;
 }
 
-.slider__change-bar-arrows {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  color: @special-grey-3;
+.slider__change-bar:hover .slider__change-bar-arrows {
+  border-color: @basic-green;
+  color: @basic-green;
 }
 
 .slider__change-bar-arrows svg {
   display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
