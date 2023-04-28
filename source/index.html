@@ -177,17 +177,32 @@
             </div>
             <div class="case__illustration illustration">
               <div class="illustration__wrapper">
-                <div class="illustration__img illustration__img--before" id="img-before">
-                  <!-- <button class="illustration__button illustration__button-minus" type="button" id="button-minus"></button> -->
-                </div>
-                <div class="illustration__img illustration__img--after" id="img-after">
-                  <!-- <button class="illustration__button illustration__button-plus" type="button" id="button-plus"></button> -->
+                <div class="slider">
+                  <div class="slider__before">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/slider-before-tablet.png 1x, img/slider-before-tablet@2x.png 2x">
+                      <img src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png 2x"
+                        alt="Изображение кота до.">
+                    </picture>
+                  </div>
+                  <div class="slider__after">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/slider-after-tablet.png 1x, img/slider-after-tablet@2x.png 2x">
+                      <img src="img/slider-after-mobile.png" srcset="img/slider-after-mobile@2x.png 2x"
+                        alt="Изображение кота после.">
+                    </picture>
+                  </div>
+                  <div class="slider__change-bar">
+                    <div class="slider__change-bar-arrows">
+                      <svg width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <use xlink:href="img/sprite.svg#arrows"></use>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <form class="illustration__slider slider">
-                <input class="slider__value" type="number" name="slider-level" value="132">
-                <div class="slider__slider-wrapper"></div>
-              </form>
             </div>
           </div>
         </div>
@@ -290,6 +305,7 @@
     </footer>
   </div>
   <script src="./js/index.js"></script>
+  <script src="./js/cat-slider.js"></script>
 </body>
 
 </html>
