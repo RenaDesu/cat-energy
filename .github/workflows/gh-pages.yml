@@ -7,39 +7,31 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
-
-    permissions:
-      contents: write
-
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Check Out
+        uses: actions/checkout@v2.4.0
         with:
-          node-version-file: 'package.json'
+          persist-credentials: false
 
-      - name: Restore cache
-        uses: actions/cache@v3
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
-          path: ~/.npm
-          key: cache-npm-${{ hashFiles('./package-lock.json') }}
-          restore-keys: cache-npm-
+          node-version: '16.x'
 
-      - name: Install dependencies
+      - name: Installing Dependencies
         run: npm ci
 
-      - name: Build project
+      - name: Linting
+        run: npm run lint
+
+      - name: Building
         run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           folder: ./build
           branch: gh-pages
-          single-commit: true

@@ -26,6 +26,7 @@ const productListFragment = document.createDocumentFragment();
 const showAllButton = productList.querySelector('.product-list__button-all');
 const itemMore = productList.querySelector('#item-more');
 
+// Создает карточки товара, данные для карточек пока берутся из PRODUCT_LIST_DATA
 const createProductListItem = () => {
   PRODUCT_LIST_DATA.forEach((product) => {
     const productListElement = productListItemTemplate.cloneNode(true);
