@@ -4,7 +4,7 @@ const slider = document.querySelector('.slider');
 const before = slider.querySelector('.slider__before');
 const beforeImage = before.querySelector('img');
 const changeBar = slider.querySelector('.slider__change-bar');
-const body = document.body;
+const sliderContainer = document.querySelector('.case__illustration');
 
 let isActive = false;
 
@@ -25,19 +25,19 @@ const pauseEvents = (e) => {
   return false;
 };
 
-body.addEventListener('mousedown', () => {
+sliderContainer.addEventListener('mousedown', () => {
   isActive = true;
 });
 
-body.addEventListener('mouseup', () => {
+sliderContainer.addEventListener('mouseup', () => {
   isActive = false;
 });
 
-body.addEventListener('mouseleave', () => {
+sliderContainer.addEventListener('mouseleave', () => {
   isActive = false;
 });
 
-body.addEventListener('mousemove', (e) => {
+sliderContainer.addEventListener('mousemove', (e) => {
   if (!isActive) {
     return;
   }
@@ -48,19 +48,19 @@ body.addEventListener('mousemove', (e) => {
   pauseEvents(e);
 });
 
-body.addEventListener('touchstart', () => {
+sliderContainer.addEventListener('touchstart', () => {
   isActive = true;
 });
 
-body.addEventListener('touchend', () => {
+sliderContainer.addEventListener('touchend', () => {
   isActive = false;
 });
 
-body.addEventListener('touchcancel', () => {
+sliderContainer.addEventListener('touchcancel', () => {
   isActive = false;
 });
 
-body.addEventListener('touchmove', (e) => {
+sliderContainer.addEventListener('touchmove', (e) => {
   if (!isActive) {
     return;
   }
